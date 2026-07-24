@@ -87,6 +87,7 @@ REGISTRY_MAPPER = {
 
     # source1 / dashboard
     "source1HeatingDemandTemperature": "__R8181_REAL_.0f",
+    "source1RunningStatus": "__Y6.3_BOOL_i",
 
     # fireplace / dashboard
     "fireplaceActualTemperature": "__R5878_REAL_.0f",
