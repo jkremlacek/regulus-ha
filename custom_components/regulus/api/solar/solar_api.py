@@ -17,19 +17,19 @@ class SolarApi(AbstractApi[SolarResponseSchema]):
 
     def generate_response(self, schema_xml_map: Dict[str, str], registry_mapper: Dict[str, str]) -> SolarResponseSchema:
         return SolarResponseSchema(
-            solarPumpPower=deviceSensor("Solar Pump Power", "solarPumpPower", "%", NumberDeviceClass.POWER_FACTOR, "mdi:solar-power", Platform.NUMBER, schema_xml_map, registry_mapper),
+            solarPumpPower=deviceSensor("Solar Pump Power", "solarPumpPower", "%", SensorDeviceClass.POWER_FACTOR, "mdi:solar-power", Platform.SENSOR, schema_xml_map, registry_mapper),
             solarPumpRunning=deviceSensor("Solar Pump Running", "solarPumpRunning", "", BinarySensorDeviceClass.RUNNING, "mdi:pump", Platform.BINARY_SENSOR, schema_xml_map, registry_mapper, converter=lambda value: value != "0"),
             solarCollectorTemperature=deviceSensor("Solar Collector Temperature", "solarCollectorTemperature", "°C", SensorDeviceClass.TEMPERATURE, "mdi:thermometer", Platform.SENSOR, schema_xml_map, registry_mapper),
             solarConsumer1Heating=deviceSensor("Solar Consumer 1 Heating", "solarConsumer1Heating", "", BinarySensorDeviceClass.HEAT, "mdi:heat-wave", Platform.BINARY_SENSOR, schema_xml_map, registry_mapper, converter=lambda value: value != "0"),
             solarConsumer1Temperature=deviceSensor("Solar Consumer 1 Temperature", "solarConsumer1Temperature", "°C", SensorDeviceClass.TEMPERATURE, "mdi:thermometer", Platform.SENSOR, schema_xml_map, registry_mapper),
             solarConsumer1Demand=deviceSensor("Solar Consumer 1 Demand", "solarConsumer1Demand", "°C", NumberDeviceClass.TEMPERATURE, "mdi:thermometer-plus", Platform.NUMBER, schema_xml_map, registry_mapper),
-            solarConsumer1MaximumTemperature=deviceSensor("Solar Consumer 1 Maximum Temperature", "solarConsumer1MaximumTemperature", "°C", NumberDeviceClass.TEMPERATURE, "mdi:thermometer-alert", Platform.NUMBER, schema_xml_map, registry_mapper),
+            solarConsumer1MaximumTemperature=deviceSensor("Solar Consumer 1 Maximum Temperature", "solarConsumer1MaximumTemperature", "°C", SensorDeviceClass.TEMPERATURE, "mdi:thermometer-alert", Platform.SENSOR, schema_xml_map, registry_mapper),
             solarConsumer2Heating=deviceSensor("Solar Consumer 2 Heating", "solarConsumer2Heating", "", BinarySensorDeviceClass.HEAT, "mdi:heat-wave", Platform.BINARY_SENSOR, schema_xml_map, registry_mapper, converter=lambda value: value != "0"),
             solarConsumer2Temperature=deviceSensor("Solar Consumer 2 Temperature", "solarConsumer2Temperature", "°C", SensorDeviceClass.TEMPERATURE, "mdi:thermometer", Platform.SENSOR, schema_xml_map, registry_mapper),
             solarConsumer2Demand=deviceSensor("Solar Consumer 2 Demand", "solarConsumer2Demand", "°C", NumberDeviceClass.TEMPERATURE, "mdi:thermometer-plus", Platform.NUMBER, schema_xml_map, registry_mapper),
-            solarConsumer2MaximumTemperature=deviceSensor("Solar Consumer 2 Maximum Temperature", "solarConsumer2MaximumTemperature", "°C", NumberDeviceClass.TEMPERATURE, "mdi:thermometer-alert", Platform.NUMBER, schema_xml_map, registry_mapper),
+            solarConsumer2MaximumTemperature=deviceSensor("Solar Consumer 2 Maximum Temperature", "solarConsumer2MaximumTemperature", "°C", SensorDeviceClass.TEMPERATURE, "mdi:thermometer-alert", Platform.SENSOR, schema_xml_map, registry_mapper),
             solarConsumer3Heating=deviceSensor("Solar Consumer 3 Heating", "solarConsumer3Heating", "", BinarySensorDeviceClass.HEAT, "mdi:heat-wave", Platform.BINARY_SENSOR, schema_xml_map, registry_mapper, converter=lambda value: value != "0"),
             solarConsumer3Temperature=deviceSensor("Solar Consumer 3 Temperature", "solarConsumer3Temperature", "°C", SensorDeviceClass.TEMPERATURE, "mdi:thermometer", Platform.SENSOR, schema_xml_map, registry_mapper),
             solarConsumer3Demand=deviceSensor("Solar Consumer 3 Demand", "solarConsumer3Demand", "°C", NumberDeviceClass.TEMPERATURE, "mdi:thermometer-plus", Platform.NUMBER, schema_xml_map, registry_mapper),
-            solarConsumer3MaximumTemperature=deviceSensor("Solar Consumer 3 Maximum Temperature", "solarConsumer3MaximumTemperature", "°C", NumberDeviceClass.TEMPERATURE, "mdi:thermometer-alert", Platform.NUMBER, schema_xml_map, registry_mapper),
+            solarConsumer3MaximumTemperature=deviceSensor("Solar Consumer 3 Maximum Temperature", "solarConsumer3MaximumTemperature", "°C", SensorDeviceClass.TEMPERATURE, "mdi:thermometer-alert", Platform.SENSOR, schema_xml_map, registry_mapper),
         )
