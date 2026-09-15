@@ -31,14 +31,17 @@ REGISTRY_MAPPER = {
     "solarConsumer1MaximumTemperature": "__R19397_USINT_u",
     "solarConsumer1Demand": "__R19396_USINT_u",
     "solarConsumer1Heating": "__R4209.0_BOOL_i",
+    "solarConsumer1ServiceEnabled": "__R19337.4_BOOL_i",
     "solarConsumer2Temperature": "__R19399_USINT_u",
     "solarConsumer2MaximumTemperature": "__R19398_USINT_u",
     "solarConsumer2Demand": "__R4198_REAL_.1f",
     "solarConsumer2Heating": "__R4209.1_BOOL_i",
+    "solarConsumer2ServiceEnabled": "__R19337.5_BOOL_i",
     "solarConsumer3Temperature": "__R19401_USINT_u",
     "solarConsumer3MaximumTemperature": "__R19400_USINT_u",
     "solarConsumer3Demand": "__R4202_REAL_.1f",
     "solarConsumer3Heating": "__R4209.2_BOOL_i",
+    "solarConsumer3ServiceEnabled": "__R19337.2_BOOL_i",
 
     # heat pump / ZD_T.XML
     "hpRunningTime": "__R30079_TIME_Thh:mm:ss",
