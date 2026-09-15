@@ -24,6 +24,21 @@ REGISTRY_MAPPER = {
 
     "solarPanelTemperature": "__R4112_REAL_.1f",
     "solarRunningStatus": "__R8191.4_BOOL_i",
+    "solarPumpPower": "__R6682_SINT_d",
+    "solarPumpRunning": "__R8191.4_BOOL_i",
+    "solarCollectorTemperature": "__R4112_REAL_.1f",
+    "solarConsumer1Temperature": "__R19397_USINT_u",
+    "solarConsumer1MaximumTemperature": "__R19396_USINT_u",
+    "solarConsumer1Demand": "__R4209.0_BOOL_i",
+    "solarConsumer1Heating": "__R19337.5_BOOL_i",
+    "solarConsumer2Temperature": "__R4198_REAL_.1f",
+    "solarConsumer2MaximumTemperature": "__R19399_USINT_u",
+    "solarConsumer2Demand": "__R19398_USINT_u",
+    "solarConsumer2Heating": "__R4209.1_BOOL_i",
+    "solarConsumer3Temperature": "__R4202_REAL_.1f",
+    "solarConsumer3MaximumTemperature": "__R19401_USINT_u",
+    "solarConsumer3Demand": "__R19400_USINT_u",
+    "solarConsumer3Heating": "__R4209.2_BOOL_i",
 
     # heat pump / ZD_T.XML
     "hpRunningTime": "__R30079_TIME_Thh:mm:ss",

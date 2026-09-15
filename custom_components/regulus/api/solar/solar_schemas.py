@@ -1,0 +1,21 @@
+from pydantic import BaseModel
+
+from ...schema import DeviceSchema
+
+
+class SolarResponseSchema(BaseModel):
+    solarPumpPower: DeviceSchema
+    solarPumpRunning: DeviceSchema
+    solarCollectorTemperature: DeviceSchema
+    solarConsumer1Heating: DeviceSchema
+    solarConsumer1Temperature: DeviceSchema
+    solarConsumer1Demand: DeviceSchema
+    solarConsumer1MaximumTemperature: DeviceSchema
+    solarConsumer2Heating: DeviceSchema
+    solarConsumer2Temperature: DeviceSchema
+    solarConsumer2Demand: DeviceSchema
+    solarConsumer2MaximumTemperature: DeviceSchema
+    solarConsumer3Heating: DeviceSchema
+    solarConsumer3Temperature: DeviceSchema
+    solarConsumer3Demand: DeviceSchema
+    solarConsumer3MaximumTemperature: DeviceSchema
