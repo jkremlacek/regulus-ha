@@ -11,7 +11,7 @@ from .solar_schemas import SolarResponseSchema
 
 
 class SolarApi(AbstractApi[SolarResponseSchema]):
-    page = "/EN/ZD_SOL.XML"
+    page = "/ZD_SOL.XML"
     key = "solar"
     name = "Solar"
 
