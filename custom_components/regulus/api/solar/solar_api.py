@@ -25,7 +25,7 @@ class SolarApi(AbstractApi[SolarResponseSchema]):
 
         return SolarResponseSchema(
             solarPumpPower=deviceSensor("Solar Pump Power", "solarPumpPower", "%", SensorDeviceClass.POWER_FACTOR, "mdi:solar-power", Platform.SENSOR, schema_xml_map, registry_mapper),
-            solarPumpRunning=deviceSensor("Solar Pump Running", "solarPumpRunning", "", BinarySensorDeviceClass.RUNNING, "mdi:pump", Platform.BINARY_SENSOR, schema_xml_map, registry_mapper, converter=lambda value: value != "0"),
+            solarStatus=deviceSensor("Solar Pump Status", "solarRunningStatus", "", BinarySensorDeviceClass.RUNNING, "mdi:solar-panel", Platform.BINARY_SENSOR, schema_xml_map, registry_mapper, converter=lambda value: value == "1"),
             solarCollectorTemperature=deviceSensor("Solar Collector Temperature", "solarCollectorTemperature", "°C", SensorDeviceClass.TEMPERATURE, "mdi:thermometer", Platform.SENSOR, schema_xml_map, registry_mapper),
             solarConsumer1Heating=deviceSensor("Solar Consumer 1 Heating", "solarConsumer1Heating", "", BinarySensorDeviceClass.HEAT, "mdi:heat-wave", Platform.BINARY_SENSOR, schema_xml_map, registry_mapper, converter=lambda value: consumer1_enabled and value != "0"),
             solarConsumer1Enabled=deviceSensor("Solar Consumer 1 Enabled", "solarConsumer1ServiceEnabled", "", "none", "mdi:check-circle", Platform.BINARY_SENSOR, schema_xml_map, registry_mapper, converter=lambda value: value == "1"),

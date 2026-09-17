@@ -5,7 +5,7 @@ from ...schema import DeviceSchema
 
 class SolarResponseSchema(BaseModel):
     solarPumpPower: DeviceSchema
-    solarPumpRunning: DeviceSchema
+    solarStatus: DeviceSchema
     solarCollectorTemperature: DeviceSchema
     solarConsumer1Heating: DeviceSchema
     solarConsumer1Enabled: DeviceSchema
