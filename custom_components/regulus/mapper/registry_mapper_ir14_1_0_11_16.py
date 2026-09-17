@@ -25,7 +25,6 @@ REGISTRY_MAPPER = {
     "solarPanelTemperature": "__R4112_REAL_.1f",
     "solarRunningStatus": "__R8191.4_BOOL_i",
     "solarPumpPower": "__R6682_SINT_d",
-    "solarCollectorTemperature": "__R4112_REAL_.1f",
     "solarConsumer1Temperature": "__R4194_REAL_.1f",
     "solarConsumer1MaximumTemperature": "__R19397_USINT_u",
     "solarConsumer1Demand": "__R19396_USINT_u",
